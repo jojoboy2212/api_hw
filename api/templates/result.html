@@ -1,0 +1,10 @@
+<h1>노선정보</h1>
+{% for data in busDataSorted %}
+    <p> 출발지 : {{data.stStation}}</p>
+    <p> 도착지 : {{data.arStation}}</p>
+    <p> 배차간격 : {{data.term}}</p>
+    <p> 첫차시간 : {{data.firstBus}}</p>
+    <p> 막차시간 : {{data.lastBus}}</p>
+    <p> ---------------------------------</p>
+
+{% endfor %}
